@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+{% block body %}
+
+
+
+    <table class="table">
+      <!-- <thead>
+        <tr>
+          <th scope="col">Prayer</th>
+          <th scope="col">Tag</th>
+        </tr>
+      </thead> -->
+      
+      <tbody>
+{% for result in myresult %}
+<tr>
+  
+
+<td>{{result[0]}}</td>
+<td>{{result[1]}}</td>
+
+</tr>
+
+{% endfor %}
+</tbody>
+</table>
+              
+{% endblock body %}
